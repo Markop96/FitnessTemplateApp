@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - site1</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/site1.styles.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/materialize.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Chango&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <nav style="background-color:transparent !important">
+            <div class="nav-wrapper container20 linka poiret">
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Gallery">Gallery</a></li>
+                    
+                </ul>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <li>
+                            <a asp-area="Identity" asp-page="/Account/Login">Login</a>
+                        </li>
+                    }
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li>
+                            <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                                <button type="submit">Logout</button>
+                            </form>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container0">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <div class="fixed-action-btn" id="scrollToTop">
+        <a class="btn-floating btn-large #8bc34a orange btn1">
+            <i class="large material-icons">arrow_upward</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating lightcolorbutton btn2"><i class="material-icons c1">whatshot</i></a></li>
+            <li><a class="btn-floating midcolorbutton btn2" href="tel:0648206185"><i class="material-icons">phone</i></a></li>
+            <li><a class="btn-floating darkcolorbutton btn2" href="mailto:markop1609@gmail.com"><i class="material-icons">email</i></a></li>
+        </ul>
+    </div>
+
+
+    <footer class="page-footer">
+        <div class="container50">
+            <div class="row">
+                <div class="col-7 l6 s12">
+                    <h5> <i class="material-icons cardicon">local_phone</i> 065-2125-762</h5>
+                    <h5> <i class="material-icons cardicon">email</i> firegym@gmail.com </h5>
+                </div>
+                <div class="col l4 offset-l2 s12" style="color:black !important; margin-top:20px">
+                    <ul class="right">
+                        <ul class="ul1">
+                            <li><a class="grey-text text-lighten-3 li1" href="#!"><img class="social-icon" src="~/img/insta.png" /></a></li>
+                            <li><a class="grey-text text-lighten-3 li1" target="_blank" href="https://www.facebook.com/limarijamarkovic1991"><img class="social-icon" src="~/img/fb.png" /></a></li>
+                            <li><a class="grey-text text-lighten-3 li1" href="#!"><img class="social-icon" src="~/img/yt.png" /></a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright" style="color:white !important">
+            <div class="container20">
+                <strong style="color:orange; font-weight:900"> © FireGym</strong> 2014 - Sva prava zadržana
+
+                <p>
+                    created by <strong style="color:orange; font-weight:900"> markop1609@gmail.com </strong>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/materialize.min.js" asp-append-version="true"></script>
+</body>
+</html>

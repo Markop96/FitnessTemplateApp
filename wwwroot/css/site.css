@@ -1,0 +1,668 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+body {
+    overflow: auto; /* Hide scrollbars on body */
+    background-color: black;
+    font-family: "Poiret One", sans-serif;
+    color:white;
+}
+
+footer {
+    position: relative;
+    bottom: 0 !important;
+    width: 100%;
+    background: linear-gradient(to right ,black,#0d0d0d,92%,lawngreen) !important;
+    color: white !important;
+    font-weight: 900 !important;
+    margin-top:-15px;
+}
+
+    footer h5 {
+        font-size: 15px !important;
+    }
+
+footer i{
+    font-size: 15px !important;
+}
+
+.container0 {
+
+margin-left:0;
+margin-right:0;
+}
+
+
+.container20 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container50 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container100 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.container200 {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.btn1:hover {
+    background-color: #133b0d !important;
+    transition: all ease-in-out 0.5s;
+}
+
+.btn2:hover {
+    background-color: darkorange !important;
+    transition: all ease-in-out 0.3s;
+}
+
+.lightcolorbutton {
+    background-color: #37c924 !important;
+}
+
+.midcolorbutton {
+    background-color: #278a1a !important;
+}
+
+.darkcolorbutton {
+    background-color: #184f11 !important;
+}
+
+
+.linka a {
+    font-weight: 900;
+}
+
+
+.linka a:hover {
+    color: darkorange !important;
+    border-bottom:5px solid darkorange;
+    transition: color ease-in-out 0.3s;
+}
+
+.poiret {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* KARTICE PAKETA */
+.e-card {
+    margin: 10px auto;
+    background: transparent;
+    box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+    position: relative;
+    width: 260px;
+    height: 330px;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform ease-in-out 0.5s;
+}
+
+    .e-card:hover {
+    transform:scale(1.08);
+    
+    }
+
+.wave {
+    position: absolute;
+    width: 540px;
+    height: 700px;
+    opacity: 0.8;
+    left: 0;
+    top: 0;
+    margin-left: -50%;
+    margin-top: -70%;
+}
+
+.wave1 {
+    background: linear-gradient(#52b823,#52b823,60%,#52b823);
+}
+
+.wave2 {
+    background: linear-gradient(#327d0f,#327d0f,60%,#327d0f);
+}
+
+.wave3 {
+    background: linear-gradient(darkgreen,darkgreen,60%,darkgreen);
+}
+
+.wave4 {
+    background: linear-gradient(#144000,#144000,60%,#144000);
+}
+
+.wave5 {
+    background: linear-gradient(#c24e00,#c24e00,60%,#c24e00);
+}
+
+.infotop {
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    top: 2.6em;
+    left: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poiret One", sans-serif;
+    letter-spacing:3px;
+}
+
+.name {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    position: relative;
+    top: 5em;
+    text-transform: lowercase;
+    color:ghostwhite;
+    text-shadow: 2px 2px black
+}
+
+.wave:nth-child(2),
+.wave:nth-child(3) {
+    top: 210px;
+}
+
+.playing .wave {
+    border-radius: 40%;
+    animation: wave 30s infinite linear;
+}
+
+.wave {
+    border-radius: 40%;
+    animation: wave 55s infinite linear;
+}
+
+.playing .wave:nth-child(2) {
+    animation-duration: 9000ms;
+}
+
+.wave:nth-child(2) {
+    animation-duration: 50s;
+}
+
+.playing .wave:nth-child(3) {
+    animation-duration: 6000ms;
+}
+
+.wave:nth-child(3) {
+    animation-duration: 45s;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-around; 
+    padding: 20px;
+}
+
+.cardicon {
+    color: darkorange;
+    font-size: 30px;
+    opacity: 0.99;
+    padding-top: 15px
+}
+.infotop ul {
+    margin-top:20px;
+}
+.infotop li {
+    list-style-type: circle !important;
+    font-size: 8px;
+    text-align: start !important;
+    margin-left: 25px;
+    margin-right: 5px;
+    margin-bottom:10px;
+}
+
+.naslovnaslika {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1
+}
+
+.naslovsadrzaj {
+    margin-top: 80px;
+    margin-bottom: 300px;
+    justify-content: center;
+    text-align: center
+}
+
+.naslovnaikonica {
+    color: darkorange;
+    font-size: 130px !important;
+    opacity: 0.8
+}
+
+.firegymnaslov {
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-top: -30px;
+    text-shadow: 3px 3px darkorange;
+    font-size: 80px
+}
+
+    .firegymnaslov strong {
+        font-weight: 900;
+        color: darkorange;
+        text-shadow: 3px 3px white
+    }
+.nasateretanaje {
+    margin-top: -20px;
+    background: linear-gradient(to right,transparent,transparent,black,darkorange,black,transparent,transparent)
+}
+
+    .nasateretanaje h2 {
+        letter-spacing: 5px;
+        font-size: 30px;
+        color: white;
+        text-shadow: 1px 1px black;
+        font-weight: 900;
+        padding: 20px;
+        text-transform:lowercase;
+    }
+
+.naslovnabtn {
+    margin-top: 35px
+}
+
+.text1 {
+    color: white;
+    font-weight: 300;
+    font-size: 20px
+}
+
+.text2 {
+    color: orange;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+.aboutus h1 {
+    text-align: center;
+    color: lawngreen;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px green;
+    font-size: 50px;
+    margin-top: -10px
+}
+
+.aboutustext {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.aboutusadress {
+    font-size: 30px;
+    margin-top: -5px;
+    text-align: end;
+    color: orange
+}
+
+.vinjeta {
+    position: relative;
+    display: inline-block;
+}
+
+    .vinjeta::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 60%);
+    }
+
+.trainer img {
+    border: 2px solid lawngreen;
+    padding: 4px;
+    width: 250px;
+    transition: all ease 0.5s;
+}
+
+    .trainer img:hover {
+        border: 9px solid darkorange;
+    }
+
+.trainer h6 {
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.trainer {
+    margin-bottom: 20px;
+}
+
+    .trainer a {
+        color: white !important;
+    }
+
+        .trainer a:hover {
+            color: lawngreen !important;
+            border-bottom: 1px solid lawngreen;
+            transition: all ease 0.4s;
+        }
+
+.stats-container {
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.stat {
+    margin-bottom: 30px;
+}
+
+.count {
+    font-size: 100px;
+    font-weight: bold;
+    color: lawngreen;
+}
+
+.stat p {
+    margin-top: 5px;
+    font-size: 30px;
+    letter-spacing: 6px;
+    font-weight: 900;
+}
+
+.h5 {
+    font-size: 50px;
+    color: orange;
+    letter-spacing: 5px;
+}
+
+input, textarea {
+    color: white !important;
+    font-weight: 300;
+    margin-bottom: 20px !important;
+}
+
+    input:after {
+        color: darkorange !important;
+    }
+
+.form {
+    text-align: center;
+    margin: 100px 300px 100px 300px;
+}
+
+label {
+    color: orange !important;
+}
+
+.ul1 img {
+    width: 30px;
+    padding-bottom: 10px;
+    margin-right: -30px;
+    transition: transform ease-in-out 0.5s;
+}
+
+    .ul1 img:hover {
+        transform: scale(1.2);
+        filter: brightness(0) invert(1);
+    }
+
+.parallax-container {
+    height: 250px !important;
+}
+
+.ab2 {
+    display: none;
+}
+
+
+/*TELEFON*/
+@media only screen and (max-width: 767px) {
+    .naslovsadrzaj {
+        margin-top: -10px;
+        margin-bottom: 80px;
+    }
+
+    .naslovnaikonica {
+        font-size: 100px !important;
+    }
+
+    .nasateretanaje {
+        background: linear-gradient(to right,transparent,darkorange,transparent)
+    }
+
+        .nasateretanaje h2 {
+            font-size: 15px;
+            letter-spacing:4px;
+            word-spacing:-2px !important;
+        }
+
+    .naslovnabtn {
+        margin-top:10px
+    }
+
+    .text1 {
+        border-top: 1px solid orange;
+        padding-top:10px;
+        font-size: 16px;
+        text-align:justify;
+    }
+
+    .text2 {
+        color: orange;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: justify !important;
+    }
+
+    .e-card {
+        margin: 5px auto;
+        width: 100%;
+        height: 280px;
+    }
+
+        .e-card:hover {
+            transform: scale(1);
+        }
+
+    .infotop {
+        font-size: 25px;
+        top: 0.5em;
+        font-weight: 900;
+    }
+
+    .name {
+        font-size: 20px;
+        font-weight: 900;
+        top: 1.1em;
+    }
+
+    .infotop li {
+        font-size: 12px;
+    }
+
+    .ab1 {
+    display:none;
+    }
+
+    .ab2 {
+    display:block;
+    }
+
+    .aboutus h1 {
+        font-size: 40px;
+        margin-top: -40px
+    }
+
+    .aboutustext {
+        font-size: 16px;
+    }
+
+    .aboutusadress {
+        font-size: 20px;
+        font-weight:900; 
+        margin-bottom:-40px;
+    }
+
+    .trainer img {
+        width: 200px;
+    }
+    .stat {
+        margin-bottom: 20px;
+    }
+
+    .count {
+        font-size: 50px;
+    }
+
+    .stat p {
+        font-size: 15px;
+        letter-spacing: 4px;
+    }
+
+    .h5 {
+        font-size: 50px;
+        color: orange;
+        letter-spacing: 5px;
+    }
+
+    .parallax-container {
+        height: 200px !important;
+    }
+
+    .form {
+        text-align: center;
+        margin: 100px 40px 100px 40px;
+    }
+
+    .h5 {
+        font-size: 30px;
+        letter-spacing: 3px;
+        font-weight:900;
+        padding-bottom:20px;
+    }
+    footer {
+        background: linear-gradient(to right,black,#0d0d0d,90%,lawngreen) !important;
+    }
+
+        footer h5{
+            font-size: 12px !important;
+        }
+
+        footer i {
+            font-size: 12px !important;
+        }
+
+    .row1 {
+    display:grid;
+    
+    }
+
+    .gallery img {
+        min-width: 350px;
+    }
+
+    .el1 {
+        margin-bottom: 60px;
+    }
+ }
+
+/*TABLET*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+        .naslovsadrzaj {
+        margin-top: -10px;
+        margin-bottom: 50px;
+    }
+
+    .nasateretanaje {
+        background: linear-gradient(to right,transparent,black,darkorange,black,transparent)
+    }
+
+
+    .text1 {
+        border-top: 1px solid orange;
+        padding-top: 10px;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .text2 {
+        color: orange;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: justify !important;
+    }
+
+    .package {
+        zoom:0.8;
+    }
+
+    .ab1 {
+        display: none;
+    }
+
+    .ab2 {
+        display: block;
+    }
+    .trainer {
+    zoom:0.8;
+    
+    }
+    .count {
+        font-size: 70px;
+    }
+
+    .stat p {
+        font-size: 25px;
+        letter-spacing: 4px;
+    }
+    .form {
+        text-align: center;
+        margin: 100px 40px 100px 40px;
+    }
+}

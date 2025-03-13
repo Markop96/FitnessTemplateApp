@@ -1,0 +1,133 @@
+﻿<style>
+
+    .gallery-card {
+        border: 2px solid black;
+        background-color: rgba(50, 50, 50, 0.9);
+        margin-bottom:-30px;
+    }
+    .card-title {
+        color: darkorange;
+    }
+
+    .gallery img{
+        width:300px;
+        height:250px;
+    object-fit:cover;
+    }
+    .gallery{
+    margin-bottom:50px;
+    }
+    .card-title{
+        font-weight:900 !important;
+        text-shadow:1px 1px black;
+        background-color:darkorange;
+        padding:5px !important;
+        padding-right:30px !important;
+        color:white;
+        z-index:50;
+    }
+    .vinjeta1 {
+        position: relative;
+        display: inline-block;
+    }
+        .vinjeta1::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 90%);
+        }
+        .vinjeta1:hover::after {
+            background: radial-gradient(circle, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 1) 90%);
+        }
+
+</style>
+
+<div id="gallery" class="container20 gallery">
+    <h1 class="firegymnaslov" style="text-align:center; margin-top:50px;">
+
+        <strong>Fire</strong>Gym<b style="text-shadow:none; color:darkorange">llery</b>
+
+    </h1>
+    <div class="row row1">
+        <div class="col s12 m6 l4 el1">
+            <div class="card gallery-card">
+                <div class="card-image vinjeta1">
+                    <img src="~/img/imggym1.jpg" alt="Gym Equipment">
+
+                    <span class="card-title">Slika 1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l4 el1">
+
+            <div class="card gallery-card">
+
+                <div class="card-image vinjeta1">
+
+                    <img src="~/img/imggym2.jpg" alt="Gym Equipment">
+
+                    <span class="card-title">Slika 2</span>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="card gallery-card">
+
+                <div class="card-image vinjeta1">
+
+                    <img src="~/img/imggym3.jpg" alt="Gym Equipment">
+
+                    <span class="card-title">Slika 3</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row1">
+
+        <div class="col s12 m6 l4 el1">
+
+            <div class="card gallery-card">
+               <div class="card-image vinjeta1">
+                    <img class="vinjeta" src="~/img/imggym1.jpg" alt="Gym Equipment">
+                    <span class="card-title">Slika 1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l4 el1">
+
+            <div class="card gallery-card">
+                <div class="card-image vinjeta1">
+                    <img src="~/img/imggym2.jpg" alt="Gym Equipment">
+                    <span class="card-title">Slika 2</span>
+                </div>
+           </div>
+        </div>
+
+        <div class="col s12 m6 l4 el1">
+
+            <div class="card gallery-card">
+                <div class="card-image vinjeta1">
+                    <img src="~/img/imggym3.jpg" alt="Gym Equipment">
+                    <span class="card-title">Slika 3</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <div class="container20 poiret center text2">
+    <hr />
+    *Više slika iz FireGym teretane možete pogledati na našem instagram profilu, :)
+    <hr />
+</div>

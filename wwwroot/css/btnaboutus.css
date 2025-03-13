@@ -1,0 +1,26 @@
+﻿/* From Uiverse.io by KSAplay */
+.btn {
+    padding: 0 3em 0 3em;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    color: lightgoldenrodyellow;
+    letter-spacing: 0.3em;
+    background-color: transparent;
+    border: 2px solid darkorange;
+    box-shadow: 0 0 0px 1px #fc7b03, 0 0 10px 2px #fc7b03, inset 0 0 0px 1px #fc7b03, inset 0 0 10px 2px #fc7b03;
+    transition: 100ms;
+}
+
+    .btn:hover {
+        box-shadow: 0 0 0px 1px #fc7b03, 0 0 10px 2px #fc7b03, inset 0 0 0px 1px #fc7b03, inset 0 0 30px 2px #fc7b03;
+        text-shadow: 0 0 10px #fc7b03;
+        background-color:black;
+        color:white;
+        transform: translateY(-5px);
+    }
+
+    .btn:active {
+        box-shadow: 0 0 0px 1px #fc7b03, 0 0 25px 2px #fc7b03, inset 0 0 0px 1px #fc7b03, inset 0 0 30px 2px #fc7b03;
+        transform: translateY(1px);
+    }
